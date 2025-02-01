@@ -1,0 +1,44 @@
+.hero-section {
+    position: relative;
+    text-align: left;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #24c6dc, #514a9d);
+    padding: 20px;
+    max-width: 450px;
+    color: white;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-overlay {
+      left: 5%;
+      right: 5%;
+      text-align: center;
+    }
+  
+    .hero-overlay h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-icon {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-icon:hover {
+    transform: scale(1.2);
+    color: #24c6dc;
+  }
